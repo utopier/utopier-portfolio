@@ -1,0 +1,2 @@
+(this["webpackJsonputopier-portfolio"]=this["webpackJsonputopier-portfolio"]||[]).push([[0],{9:function(e,t,o){"use strict";o.r(t);var r=o(0),n=(o(1),o(3)),i=function(){return Object(r.jsx)(r.Fragment,{children:Object(r.jsx)("div",{children:"App Page"})})};o.n(n).a.render(Object(r.jsx)(i,{}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.44af9e2e.chunk.js.map
