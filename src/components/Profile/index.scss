@@ -1,0 +1,44 @@
+@import '../../styles//theme.scss';
+
+.header__profile {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  .header__profile--avatar {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .header__profile--info {
+    max-width: 400px;
+    .header__profile--info-title {
+      display: flex;
+      background-color: $green-color;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    li {
+      height: 30px;
+      display: flex;
+      padding: 5px;
+      span {
+        display: flex;
+        padding: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header__profile {
+    flex-direction: column;
+    .header__profile--avatar {
+      width: 100%;
+    }
+  }
+}

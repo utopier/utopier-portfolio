@@ -1,10 +1,36 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './App.scss';
+
+import AppLayout from './components/AppLayout';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Documents from './pages/Documents';
+import Projects from './pages/Projects';
 
 const App = () => {
   return (
-    <>
-      <div>App Page</div>
-    </>
+    <Router>
+      <div>
+        <AppLayout>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/documents">
+              <Documents />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+          </Switch>
+        </AppLayout>
+      </div>
+    </Router>
   );
 };
 
