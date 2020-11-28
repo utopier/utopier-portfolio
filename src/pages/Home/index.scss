@@ -1,4 +1,16 @@
-section {
-  height: 100%;
-  width: 100%;
+#skills__container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-content: center;
+  gap: 10px;
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
 }

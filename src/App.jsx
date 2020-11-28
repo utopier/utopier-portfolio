@@ -21,11 +21,11 @@ const App = () => {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/documents">
-              <Documents />
-            </Route>
             <Route path="/projects">
               <Projects />
+            </Route>
+            <Route path="/documents">
+              <Documents />
             </Route>
           </Switch>
         </AppLayout>
